@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'RXOSUIKit'
-  s.version          = '3.3.0'
+  s.version          = '3.3.1'
   s.summary          = 'ruixue wechat framework.'
 
 # This description is used to generate tags and improve searc results.
@@ -50,5 +50,6 @@ TODO: Add long description of the pod here.
   s.dependency 'RXFacebookSDK'
   s.dependency 'RXGoogleSDK'
   s.dependency 'RXLineSDK'
+  s.dependency 'RXSDK_Pure'
   
 end
