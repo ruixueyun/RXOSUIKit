@@ -148,6 +148,13 @@ typedef enum : NSUInteger {
 - (void)setPrivacyWithComplete:(void(^)(NSDictionary *response, RX_CommonRequestError *error))complete;
 
 /**
+ * 申请注销
+ * @param config 基础配置
+ */
+- (void)applyForDeregisterWithConfig:(RXOSUserCenterConfig *)config
+                            complete:(void(^)(NSDictionary *response))complete;
+
+/**
  * 撤销注销
  */
 - (void)destroyAccountStatusView:(void(^)(DestroyClickType clickType))complete;
