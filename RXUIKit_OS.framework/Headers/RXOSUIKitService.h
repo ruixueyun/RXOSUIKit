@@ -176,6 +176,14 @@ typedef enum : NSUInteger {
 - (void)openWebViewWithUrl:(NSString *)url
                      title:(NSString *)title;
 
+/**
+ * 同步账号登录记录
+ * @param accounts 账号数组
+ * ！accounts结构说明:
+ * @[@{@"username" : @"", @"password" : @""}]
+ */
+- (void)syncAccounts:(NSArray <NSDictionary *> *)accounts;
+
 @end
 
 NS_ASSUME_NONNULL_END
