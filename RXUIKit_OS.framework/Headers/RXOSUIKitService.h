@@ -27,6 +27,13 @@ typedef enum : NSUInteger {
  */
 - (void)rxu_LoginCallBackWithResponse:(NSDictionary * _Nullable)response error:(RX_CommonRequestError *)error;
 
+/**
+ * 注册回调
+ * @param response 返回数据，登录失败返回nil
+ * @param error 错误返回，登录成功返回nil
+ */
+- (void)rxu_registerCallBackWithResponse:(NSDictionary * _Nullable)response error:(RX_CommonRequestError *)error;
+
 @end
 
 
