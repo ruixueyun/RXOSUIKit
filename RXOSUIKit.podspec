@@ -51,6 +51,5 @@ TODO: Add long description of the pod here.
   s.dependency 'RXGoogleSDK'
   s.dependency 'RXLineSDK'
   s.dependency 'RXSDK_Pure'
-  s.dependency 'MBProgressHUD'
   s.dependency 'RXLanguageKit'
 end
