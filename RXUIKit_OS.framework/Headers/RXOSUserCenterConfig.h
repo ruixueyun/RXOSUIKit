@@ -31,6 +31,32 @@ NS_ASSUME_NONNULL_BEGIN
  * 在瑞雪客服系统设置的接入点名称 不填写默认为default（客服用）
  */
 @property (nonatomic, strong) NSString *queue_name;
+/**
+ * 客服设置浅色模式，不设置默认为深色
+ * @note 只在单独调用客服UI时生效
+ * YES 为浅色，NO 为浅色模式
+ */
+@property (nonatomic, assign) BOOL setLightTheme;
+/**
+ * @note 不可用
+ * 用户中心是否展示同步信息按钮，默认不展示
+ * 用于同步三方信息
+ * YES 为展示，NO 为不展示
+ */
+@property (nonatomic, assign) BOOL setSyncInfoEnable;
+/**
+ * 用户中心配置
+ * 如不需要展示某一项可以将配置去掉，默认全展示
+ * 配置用户中心入口结构如下：
+ * @{@"btns" : @[@"real_name",                    实名认证
+              @"privacy_policy",              隐私政策
+              @"acount_cancel",              账号注销
+              @"phone_management",    账号管理
+              @"change_pwd"]                修改密码
+ 
+ *   }
+ */
+@property (nonatomic, strong) NSDictionary *setConfigParams;
 
 @end
 
