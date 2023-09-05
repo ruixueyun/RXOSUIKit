@@ -80,11 +80,21 @@ typedef enum : NSUInteger {
 
 /**
  * 协议声明
+ * @note 全屏H5样式
+ * @param key 默认展示的条款key
+ * @param keyList 要展示的协议列表
+ */
+- (void)setProtocolViewWithKey:(NSString *)key
+                       keyList:(NSArray *)keyList;
+
+/**
+ * 协议声明
+ * @note 窗口样式
  * @param key 默认展示的条款key
  * @param legalData 法务信息api返回的数据
  */
 - (void)setPrivacyViewWithKey:(NSString *)key
-                    legalData:(NSDictionary *)legalData;
+                    legalData:(NSDictionary *)legalData DEPRECATED_MSG_ATTRIBUTE("use setProtocolViewWithKey:keyList: instead");
 
 /**
  * 实名认证
