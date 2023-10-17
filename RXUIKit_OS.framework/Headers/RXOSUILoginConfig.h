@@ -30,7 +30,7 @@ NS_ASSUME_NONNULL_BEGIN
  */
 @property (nonatomic, strong) NSArray *privacieTitles;
 /**
- * 登录显示的logo，不配置默认显示标题
+ * 登录显示的logo
  */
 @property (nonatomic, strong) UIImage *logoImage;
 /**
