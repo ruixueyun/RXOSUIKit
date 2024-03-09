@@ -49,7 +49,7 @@ TODO: Add long description of the pod here.
 #
   s.platform = :ios, '11.0'
   s.dependency 'RXFacebookSDK'
-  s.dependency 'RXGoogleSDK'
+  s.dependency 'RXGoogleSDK', '6.2.4'
   s.dependency 'RXLineSDK'
   s.dependency 'RXSDK_Pure'
   s.dependency 'RXLanguageKit'
