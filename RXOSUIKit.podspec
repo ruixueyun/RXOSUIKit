@@ -53,4 +53,5 @@ TODO: Add long description of the pod here.
   s.dependency 'RXLineSDK'
   s.dependency 'RXSDK_Pure'
   s.dependency 'RXLanguageKit'
+  s.dependency 'RXGoogleSDK'
 end
