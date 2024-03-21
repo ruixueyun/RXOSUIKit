@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'RXOSUIKit'
-  s.version          = '3.4.15'
+  s.version          = '3.4.16'
   # s.version          = '3.3.105'
   s.summary          = 'ruixue wechat framework.'
 

@@ -80,8 +80,8 @@ typedef enum : NSUInteger {
  * @param config 登录页基础配置，默认读取后台配置，优先读取代码配置
  * @param complete 登录结果
  */
-- (void)showLoginUIWithConfig:(RXLoginUIModel *)config
-                     complete:(void(^)(NSDictionary *response, RX_CommonRequestError *error))complete;
+//- (void)showLoginUIWithConfig:(RXLoginUIModel *)config
+//                     complete:(void(^)(NSDictionary *response, RX_CommonRequestError *error))complete;
 
 // 关闭登陆弹窗
 - (void)closeLoginView;
