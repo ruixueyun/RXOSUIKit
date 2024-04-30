@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'RXOSUIKit'
-  s.version          = '3.4.18'
+  s.version          = '3.4.19'
   # s.version          = '3.3.105'
   s.summary          = 'ruixue wechat framework.'
 
@@ -29,7 +29,7 @@ TODO: Add long description of the pod here.
   s.source           = { :git => 'https://github.com/ruixueyun/RXOSUIKit.git', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
-  s.ios.deployment_target = '11.0'
+  s.ios.deployment_target = '12.0'
   
      s.source_files = '*.framework/Headers/*.{h,m,plist}'
   
@@ -47,9 +47,9 @@ TODO: Add long description of the pod here.
   s.frameworks = 'AdSupport', 'iAd', 'Foundation', 'UIKit'
   s.libraries = 'sqlite3', 'c++', 'c++abi', 'z'
 #
-  s.platform = :ios, '11.0'
+  s.platform = :ios, '12.0'
   s.dependency 'RXFacebookSDK'
-  s.dependency 'GoogleSignIn', '6.2.4'
+  s.dependency 'GoogleSignIn', '7.1.0'
   s.dependency 'RXLineSDK'
   s.dependency 'RXSDK_Pure'
   s.dependency 'RXLanguageKit'
