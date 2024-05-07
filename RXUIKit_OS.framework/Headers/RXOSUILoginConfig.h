@@ -80,6 +80,11 @@ NS_ASSUME_NONNULL_BEGIN
  * 支持的语言
  */
 @property (nonatomic, strong) NSArray *language_able;
+/**
+ * 是否为审核模式
+ * @note 审核模式只展示苹果登录，且和正常样式不同
+ */
+@property (nonatomic, assign) BOOL isAudit;
 
 @end
 
