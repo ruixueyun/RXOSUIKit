@@ -85,6 +85,11 @@ NS_ASSUME_NONNULL_BEGIN
  * @note 审核模式只展示苹果登录，且和正常样式不同
  */
 @property (nonatomic, assign) BOOL isAudit;
+/**
+ * 是否展示登录历史弹窗，YES 展示，NO 不展示，默认 YES
+ * @note SDK 会记录已登录的账号记录，下次调用会展示登录历史弹窗
+ */
+@property (nonatomic, assign) BOOL isHistoryViewEnable;
 
 @end
 
