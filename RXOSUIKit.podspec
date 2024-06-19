@@ -8,8 +8,8 @@
 
 Pod::Spec.new do |s|
   s.name             = 'RXOSUIKit'
-  # s.version          = '3.4.23'
-   s.version          = '3.0.100'
+  s.version          = '3.5.0'
+   #s.version          = '3.0.100'
   s.summary          = 'ruixue wechat framework.'
 
 # This description is used to generate tags and improve searc results.
