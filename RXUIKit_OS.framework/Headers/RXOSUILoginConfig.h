@@ -90,6 +90,10 @@ NS_ASSUME_NONNULL_BEGIN
  * @note SDK 会记录已登录的账号记录，下次调用会展示登录历史弹窗
  */
 @property (nonatomic, assign) BOOL isHistoryViewEnable;
+/**
+ * 是否隐藏邮箱注册按钮，YES 隐藏  NO 不隐藏，默认 NO
+ */
+@property (nonatomic, assign) BOOL closeEmailRegister;
 
 @end
 
