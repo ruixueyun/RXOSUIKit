@@ -209,6 +209,13 @@ typedef enum : NSUInteger {
  */
 - (void)syncAccounts:(NSArray <NSDictionary *> *)accounts;
 
+
+/**
+ * 展示邮件
+ */
+- (void)showEmailViewWithCpUserId:(NSString *)cpUserId
+                     withComplete:(void(^)(NSDictionary *response, RX_CommonRequestError *error))complet;
+
 @end
 
 NS_ASSUME_NONNULL_END
