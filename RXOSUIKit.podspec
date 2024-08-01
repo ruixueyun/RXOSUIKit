@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'RXOSUIKit'
-  s.version          = '3.5.7'
+  s.version          = '3.5.8'
   #s.version          = '3.3.201'
   s.summary          = 'ruixue wechat framework.'
 
@@ -50,7 +50,7 @@ TODO: Add long description of the pod here.
   s.platform = :ios, '12.0'
   s.dependency 'RXFacebookSDK'
   s.dependency 'GoogleSignIn', '7.1.0'
-  #s.dependency 'RXLineSDK'
+  s.dependency 'RXLineSDK'
   s.dependency 'RXSDK_Pure'
   s.dependency 'RXLanguageKit'
   s.dependency 'RXGoogleSDK'
