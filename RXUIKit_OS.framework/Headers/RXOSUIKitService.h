@@ -185,6 +185,26 @@ typedef enum : NSUInteger {
 - (void)destroyAccountStatusView:(void(^)(DestroyClickType clickType))complete;
 
 /**
+ * 撤销注销
+ * @param deregisterType login继续登录，logout退出登录
+ * @param complete 点击回调
+ * DestroyClickType_login    继续登录
+ * DestroyClickType_logout  退出登录
+ */
+- (void)destroyAccountStatusViewWithDeregisterType:(NSString *)deregisterType
+                                          complete:(void(^)(DestroyClickType clickType))complete;
+
+/**
+ * 撤销注销  自定义非撤销注销按钮文案
+ * @param btnTitle 按钮标题
+ * @param complete 点击回调
+ * btnTitle 传入的按钮标题
+ * 撤销注销成功返回  "撤销注销"
+ */
+- (void)destroyAccountStatusViewWithBtnTitle:(NSString *)btnTitle
+                                    complete:(void(^)(NSString *btnTitle))complete;
+
+/**
  * 分享弹窗
  * @param shareInfo 分享数据，传nil则由SDK调用埋点数据
  * @param needReport 分享成功后是否需要自动上报
@@ -215,6 +235,17 @@ typedef enum : NSUInteger {
  */
 - (void)showEmailViewWithCpUserId:(NSString *)cpUserId
                      withComplete:(void(^)(NSDictionary *response, RX_CommonRequestError *error))complet;
+
+/**
+ * 绑定手机，如果已绑定手机会跳转到换绑页面
+ */
+- (void)bindPhoneWithComplete:(void(^)(NSDictionary *response))complete cancelBlock:(void(^)(RX_CommonRequestError *error))rightClose;
+
+/**
+ * 绑定邮箱，如果已绑定邮箱会跳转到换绑页面
+ */
+- (void)bindEmailWithComplete:(void(^)(NSDictionary *response))complete cancelBlock:(void(^)(RX_CommonRequestError *error))rightClose;
+
 
 @end
 
