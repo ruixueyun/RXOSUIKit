@@ -232,19 +232,22 @@ typedef enum : NSUInteger {
 
 /**
  * 展示邮件
+ * cpUserId cp方userID
  */
 - (void)showEmailViewWithCpUserId:(NSString *)cpUserId
                      withComplete:(void(^)(NSDictionary *response, RX_CommonRequestError *error))complet;
 
 /**
  * 绑定手机，如果已绑定手机会跳转到换绑页面
+ * @param complete 绑定或换绑手机操作完成后，无论成功或失败，均执行此block
  */
-- (void)bindPhoneWithComplete:(void(^)(NSDictionary *response))complete cancelBlock:(void(^)(RX_CommonRequestError *error))rightClose;
+- (void)bindPhoneWithComplete:(void(^)(NSDictionary *response, RX_CommonRequestError *error))complete;
 
 /**
  * 绑定邮箱，如果已绑定邮箱会跳转到换绑页面
+ * @param complete 绑定或换绑邮箱操作完成后，无论成功或失败，均执行此block
  */
-- (void)bindEmailWithComplete:(void(^)(NSDictionary *response))complete cancelBlock:(void(^)(RX_CommonRequestError *error))rightClose;
+- (void)bindEmailWithComplete:(void(^)(NSDictionary *response, RX_CommonRequestError *error))complete;
 
 
 @end
