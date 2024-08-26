@@ -112,6 +112,16 @@ typedef enum : NSUInteger {
                            complete:(void(^)(NSDictionary *response, RX_CommonRequestError *error))complete;
 
 /**
+ * 实名认证 H5
+ * @note 不同地区的实名认证样式不同
+ * @param region 地区
+ * @param canClose 是否展示关闭按钮，默认不展示
+ */
+- (void)setRealauthViewH5WithRegion:(NSString *)region
+                           canClose:(BOOL)canClose
+                           complete:(void(^)(NSDictionary *response, RX_CommonRequestError *error))complete;
+
+/**
  * 防沉迷
  * @param title 标题
  * @param des 内容
