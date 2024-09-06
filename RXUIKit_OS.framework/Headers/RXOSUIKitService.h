@@ -260,6 +260,22 @@ typedef enum : NSUInteger {
 - (void)bindEmailWithComplete:(void(^)(NSDictionary *response, RX_CommonRequestError *error))complete;
 
 
+/**
+ * 展示公告
+ * limit 展示公告条数
+ * linkCallBack 如果用户点击了链接，则链接由此返回，后续可使用此链接做业务处理
+ * ishasCallBack 是否有公告，YES有，NO没有
+ */
+- (void)showAnnounceViewWithLimit:(int)limit linkCallBack:(void(^)(NSString *link))linkCallBack isHasCallBack:(void(^)(BOOL isHas))ishasCallBack;
+
+/**
+ * 展示维护公告，默认为1条
+ * linkCallBack 如果用户点击了链接，则链接由此返回，后续可使用此链接做业务处理
+ * title 维护公告标题
+ * content 维护公告内容
+ */
+- (void)showAnnounceViewWithTitle:(NSString *)title content:(NSString *)content linkCallBack:(void(^)(NSString *link))linkCallBack;
+
 @end
 
 NS_ASSUME_NONNULL_END
