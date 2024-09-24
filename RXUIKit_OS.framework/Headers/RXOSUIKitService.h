@@ -276,6 +276,16 @@ typedef enum : NSUInteger {
  */
 - (void)showAnnounceViewWithTitle:(NSString *)title content:(NSString *)content linkCallBack:(void(^)(NSString *link))linkCallBack;
 
+/**
+ * 我的意见反馈列表
+ */
+- (void)showFeedbackListView;
+
+/**
+ * 创建意见反馈
+ */
+- (void)showCreateFeedbackView;
+
 @end
 
 NS_ASSUME_NONNULL_END
