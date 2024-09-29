@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'RXOSUIKit'
-  s.version          = '3.5.19'
+  s.version          = '3.5.20'
   #s.version          = '3.3.201'
   s.summary          = 'ruixue wechat framework.'
 
@@ -54,6 +54,5 @@ TODO: Add long description of the pod here.
   s.dependency 'RXSDK_Pure'
   s.dependency 'RXLanguageKit'
   s.dependency 'RXGoogleSDK'
-  s.dependency 'TZImagePickerController/Basic', '3.8.7'
   
 end
