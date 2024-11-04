@@ -34,6 +34,15 @@ NS_ASSUME_NONNULL_BEGIN
  */
 @property (nonatomic, strong) UIImage *logoImage;
 /**
+ * 自定义参数
+ */
+@property (nonatomic, strong) NSDictionary *setCustomParams;
+/**
+ * FaceBook、Line登录权限数组
+ * @note 使用FaceBook、Line登录必传
+ */
+@property (nonatomic, strong) NSArray *permissionsArray;
+/**
  * 登录页是否显示关闭按钮，默认显示
  */
 @property (nonatomic, assign) BOOL isShowClose;

@@ -81,7 +81,15 @@ typedef enum : NSUInteger {
  * @param complete 登录结果
  */
 - (void)showLoginUIWithConfig:(RXLoginUIModel *)config
-                     complete:(void(^)(NSDictionary *response, RX_CommonRequestError *error))complete;
+                     complete:(void(^)(NSDictionary *response, RX_CommonRequestError *error))complete DEPRECATED_MSG_ATTRIBUTE("use setLoginViewWithConfig:complete: instead");
+
+/**
+ * 调用登录弹窗
+ * @param config 登录页基础配置，默认读取后台配置，优先读取代码配置
+ * @param complete 登录结果
+ */
+- (void)setLoginViewWithConfig:(RXOSUILoginConfig *)config
+                      complete:(void(^)(NSDictionary *response, RX_CommonRequestError *error))complete;
 
 // 关闭登陆弹窗
 - (void)closeLoginView;
