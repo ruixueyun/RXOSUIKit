@@ -87,6 +87,11 @@ NS_ASSUME_NONNULL_BEGIN
  */
 @property (nonatomic, strong) NSString *deregisterType;
 /**
+ * 如果账号在注销中是继续登录还是退出登录
+ * YES 继续登录 | NO 退出登录
+ */
+@property (nonatomic, assign) BOOL setLoginContinue;
+/**
  * 多语言展示的默认语言，默认中文
  */
 @property (nonatomic, strong) NSString *language_default;
