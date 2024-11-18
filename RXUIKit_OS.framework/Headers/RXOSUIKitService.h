@@ -172,6 +172,11 @@ typedef enum : NSUInteger {
                     complete:(void(^)(NSDictionary *response, RX_CommonRequestError *error))complete;
 
 /**
+ * 关闭用户中心
+ */
+- (void)closeUserCenter;
+
+/**
  * 帮助中心
  * @param config 基础配置
  */

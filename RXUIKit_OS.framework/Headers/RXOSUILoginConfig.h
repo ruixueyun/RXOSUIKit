@@ -113,6 +113,10 @@ NS_ASSUME_NONNULL_BEGIN
  * 是否隐藏邮箱注册按钮，YES 隐藏  NO 不隐藏，默认 NO
  */
 @property (nonatomic, assign) BOOL closeEmailRegister;
+/**
+ * 设置隐私协议是否显示开关，YES 显示  NO 不显示，默认 YES
+ */
+@property (nonatomic, assign) BOOL setShowPrivacy;
 
 @end
 
