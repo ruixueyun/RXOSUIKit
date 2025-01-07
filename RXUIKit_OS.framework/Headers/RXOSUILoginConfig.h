@@ -117,6 +117,10 @@ NS_ASSUME_NONNULL_BEGIN
  * 设置隐私协议是否显示开关，YES 显示  NO 不显示，默认 YES
  */
 @property (nonatomic, assign) BOOL setShowPrivacy;
+/**
+ * 自定义透传参数
+ */
+@property (nonatomic, strong) NSDictionary *setCustomExt;
 
 @end
 

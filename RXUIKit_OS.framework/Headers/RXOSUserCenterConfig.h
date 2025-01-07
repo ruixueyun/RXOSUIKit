@@ -38,9 +38,8 @@ NS_ASSUME_NONNULL_BEGIN
  */
 @property (nonatomic, strong) NSString *queue_name;
 /**
- * 客服设置浅色模式，不设置默认为深色
- * @note 只在单独调用客服UI时生效
- * YES 为浅色，NO 为浅色模式
+ * 设置主体模式，默认为浅色
+ * YES 为浅色，NO 为深色模式
  */
 @property (nonatomic, assign) BOOL setLightTheme;
 /**
