@@ -68,7 +68,11 @@ NS_ASSUME_NONNULL_BEGIN
  * YES 为可以，NO 为不可以，默认 NO
  */
 @property (nonatomic, assign) BOOL orientationVisible;
-
+/**
+ * 是否开启 webview 数据上报
+ * @note 临时使用，YES 开启，NO 不开启，默认 NO
+ */
+@property (nonatomic, assign) BOOL openWebViewLog;
 @end
 
 NS_ASSUME_NONNULL_END
