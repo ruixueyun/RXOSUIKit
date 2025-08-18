@@ -121,6 +121,24 @@ NS_ASSUME_NONNULL_BEGIN
  * 自定义透传参数
  */
 @property (nonatomic, strong) NSDictionary *setCustomExt;
+/**
+ * 指定对登录成功后返回的特定字段, 使用 CPKEY 计算签名. CP 服务器可重新计算签名并与登录返回的签名比对, 作为对瑞雪登录数据的校验. 支持的字段包括: nickname, avatar, openid, region, sex, age, 计算签名的逻辑会对指定字段进行排序, 此处传参与顺序无关。类型为字符串数组 @[@"nickname",@"avatar"]
+ */
+@property (nonatomic, strong) NSArray *signFields;
+/**
+ * 任意合法的 json 类型, 比如 string, number，账号迁移用的参数, 调用 CP account-query 及 account-queryandbind 接口时透传给 CP
+ */
+@property (nonatomic, assign) id migrateArgs;
+/**
+ * 二次登录 loginOpenid
+ * @note 传入 method 和 loginOpenid 后将不会拉起登录 UI，直接调用二次登录，登录失效会默认进行授权登录
+ */
+@property (nonatomic, strong) NSString *loginOpenid;
+/**
+ * 二次登录 method
+ * @note 传入 method 和 loginOpenid 后将不会拉起登录 UI，直接调用二次登录，登录失效会默认进行授权登录
+ */
+@property (nonatomic, strong) NSString *method;
 
 @end
 
