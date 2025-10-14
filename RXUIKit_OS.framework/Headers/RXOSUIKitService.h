@@ -47,6 +47,11 @@ typedef enum : NSUInteger {
 + (instancetype)sharedSDK;
 
 /**
+ * 初始化
+ */
+- (void)regist;
+
+/**
  * 配置logo
  * @param logo 展示的logo
  * @param titleImage 展示的标题图片
