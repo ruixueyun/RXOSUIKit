@@ -185,6 +185,14 @@ typedef enum : NSUInteger {
                     complete:(void(^)(NSDictionary *response, RX_CommonRequestError *error))complete;
 
 /**
+ * 用户中心
+ * @param config 基础配置
+ * @note 回调统一为 {"code":0, "data":{"type":"xxx"}} 结构
+ */
+- (void)userCenterUIWithConfig:(RXOSUserCenterConfig *)config
+                      complete:(void(^)(NSDictionary *response, RX_CommonRequestError *error))complete;
+
+/**
  * 关闭用户中心
  */
 - (void)closeUserCenter;
