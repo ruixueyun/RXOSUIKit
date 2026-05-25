@@ -249,6 +249,15 @@ typedef enum : NSUInteger {
                                     complete:(void(^)(NSString *btnTitle))complete;
 
 /**
+ * 撤销注销  自定义非撤销注销按钮文案
+ * @param btnTitle 按钮标题
+ * @param complete 点击回调
+ * @note 回调统一为 {"code":0, "data":{"btn_title":"xxx", "btn_type":0}} 结构；btn_title 为“撤销注销”时 btn_type = 1，否则为 0
+ */
+- (void)destroyAccountStatusUIWithBtnTitle:(NSString *)btnTitle
+                                  complete:(void(^)(NSDictionary *response, RX_CommonRequestError *error))complete;
+
+/**
  * 分享弹窗
  * @param shareInfo 分享数据，传nil则由SDK调用埋点数据
  * @param needReport 分享成功后是否需要自动上报
